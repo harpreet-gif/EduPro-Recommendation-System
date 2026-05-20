@@ -3,8 +3,8 @@ import pandas as pd
 
 # Load data
 learner_profile = pd.read_csv("clustered_learners.csv")
-courses = pd.read_csv("courses.csv")
-transactions = pd.read_csv("transactions.csv")
+courses = pd.read_csv("EduPro Online Platform.xlsx - Courses.csv")
+transactions = pd.read_csv("EduPro Online Platform.xlsx - Transactions.csv")
 # Merge data
 data = transactions.merge(courses, on='CourseID', how='left')
 
