@@ -2,10 +2,9 @@ import streamlit as st
 import pandas as pd
 
 # Load data
-learner_profile = pd.read_csv("/Users/harpreet/OneDrive/Desktop/EduPro_Project/outputs/clustered_learners.csv")
-courses = pd.read_csv("/Users/harpreet/Desktop/EduPro_Project/data/EduPro Online Platform.xlsx - Courses.csv")
-transactions = pd.read_csv("/Users/harpreet/Desktop/EduPro_Project/data/EduPro Online Platform.xlsx - Transactions.csv")
-
+learner_profile = pd.read_csv("outputs/clustered_learners.csv")
+courses = pd.read_csv("/Users/harpreet/.../courses.csv")
+transactions = pd.read_csv("/Users/harpreet/.../transactions.csv")
 # Merge data
 data = transactions.merge(courses, on='CourseID', how='left')
 
