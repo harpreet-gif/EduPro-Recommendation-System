@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load data
-learner_profile = pd.read_csv("outputs/clustered_learners.csv")
+learner_profile = pd.read_csv("clustered_learners.csv")
 courses = pd.read_csv("/Users/harpreet/.../courses.csv")
 transactions = pd.read_csv("/Users/harpreet/.../transactions.csv")
 # Merge data
